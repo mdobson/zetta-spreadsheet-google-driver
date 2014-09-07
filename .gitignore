@@ -1,0 +1,7 @@
+node_modules
+.peers
+.registry
+env.sh
+npm-debug.log
+.DS_Store
+
