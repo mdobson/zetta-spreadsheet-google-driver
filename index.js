@@ -1,5 +1,5 @@
 var Spreadsheet = require('edit-google-spreadsheet');
-var Scout = require('zetta').Scout;
+var Scout = require('zetta-scout');
 var util = require('util');
 var GoogleDriver = require('./google_spreadsheet_driver');
 

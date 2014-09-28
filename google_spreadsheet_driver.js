@@ -1,4 +1,4 @@
-var Device = require('zetta').Device;
+var Device = require('zetta-device');
 var util = require('util');
 
 var GoogleDriver = module.exports = function(spreadsheet) {

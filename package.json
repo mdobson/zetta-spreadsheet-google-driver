@@ -1,13 +1,16 @@
 {
   "name": "zetta-spreadsheet-google-driver",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "",
   "main": "index.js",
   "dependencies": {
     "edit-google-spreadsheet": "~0.2.10",
-    "zetta": "~0.8.0"
+    "zetta-device": "^0.3.0",
+    "zetta-scout": "^0.3.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "zetta": "^0.11.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
