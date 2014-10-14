@@ -1,16 +1,13 @@
 var zetta = require('zetta');
 var Google = require('../index');
-var AutoScout = require('zetta-auto-scout');
-var LEDDriver = require('./led_driver');
-
-var LED = new AutoScout('led', LEDDriver);
+var LED = require('./led_driver');
 
 zetta()
   .name('matt.dobson')
-  .link('http://zetta-cloud-2.herokuapp.com')
+  .link('http://hello-zetta.herokuapp.com')
   .use(Google)
   .use(LED)
-  .load(function(server) {
+  .use(function(server) {
     var ledQuery = server.where({ type: 'led' });
     var googleQuery = server.where({ type: 'google' });
 
