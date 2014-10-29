@@ -18,9 +18,15 @@ GoogleScout.prototype.init = function(next) {
     username: process.env.EMAIL,
     password: process.env.PASSWORD
   }, function ready(err, spreadsheet){
-    self.discover(GoogleDriver, spreadsheet);
-    next();
+    if(err) {
+      self.discover(GoogleDriver, spreadsheet);
+    } else {
+      self.server.log('Error initializing google spreadsheet:' + err);
+    }
   }); 
+
+
+  next();
 };
 
 
