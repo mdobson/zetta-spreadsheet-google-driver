@@ -5,7 +5,7 @@ var LED = require('./led_driver');
 zetta()
   .name('matt.dobson')
   .link('http://hello-zetta.herokuapp.com')
-  .use(Google)
+  .use(Google, 'Intrusions-Demo', 'Sheet1')
   .use(LED)
   .use(function(server) {
     var ledQuery = server.where({ type: 'led' });
