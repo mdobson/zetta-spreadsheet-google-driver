@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {
     "edit-google-spreadsheet": "~0.2.10",
-    "zetta-device": "^0.7.0",
+    "zetta-device": "^0.8.0",
     "zetta-scout": "^0.3.0"
   },
   "scripts": {
